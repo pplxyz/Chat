@@ -9,14 +9,14 @@ struct GiphyMediaView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> GPHMediaView {
         let view = GPHMediaView()
-        GiphyCore.shared.gifByID(id) { (response, error) in
+        /* GiphyCore.shared.gifByID(id) { (response, error) in
             if let media = response?.data {
                 DispatchQueue.main.async {
                     view.setMedia(media)
                     self.aspectRatio = media.aspectRatio
                 }
             }
-        }
+        }*/
         return view
     }
     
